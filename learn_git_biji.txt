@@ -2,3 +2,5 @@
 2.添加文件到Git仓库，分两步：
 	第一步：使用命令：git add <file>    如：git add readme.txt    注意：可反复多次使用，添加多个文件;
 	第二步：使用命令：git commit   如：git commit -m "这是提交描述信息"
+3.查看当前仓库状态：命令：git status   如：git status
+4.想要查看上一次怎么修改的readme.txt，可以用命令： git diff     如：git diff

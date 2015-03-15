@@ -10,9 +10,7 @@
 	三、查看配制信息：git config --list
 6.查看当前git版本：命令：git --version
 7.获取git帮助，命令：git help  如：git help     如看某个特定用法如：git help add
-8.查看git提交日志历史记录，命令：git log  如：git log        按q退出 
-  如果嫌输出信息太多，看得眼花缭乱的，可以试试加上?--pretty=oneline参数   如：git log --pretty=oneline  
-  你看到的一大串类似3628164...882e1e0的是commit id（版本号）
+8.查看git提交日志历史记录，命令：git log    按q退出
 9.直接自动提交已经通过git add 追踪的文件，也就是修改过的文件且之前已经通过git add 操作的文件，
   (未通过 git add 添加过的文件是无效的) 可以一步到位，就不需要走缓存区了，直接提交到仓库中，
   使用命令：git commit -a -m "直接加个-a 这个参数就行了”
@@ -26,3 +24,4 @@
 		1.mv readme.txt readme.text
 		2.git rm readme.text
 		3.git add readme.text
+		

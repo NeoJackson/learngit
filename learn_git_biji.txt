@@ -1,0 +1,4 @@
+1.在一个项目根目录中初始化一个Git仓库 命令：git init
+2.添加文件到Git仓库，分两步：
+	第一步：使用命令：git add <file>    如：git add readme.txt    注意：可反复多次使用，添加多个文件;
+	第二步：使用命令：git commit   如：git commit -m "这是提交描述信息"

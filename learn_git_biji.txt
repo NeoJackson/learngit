@@ -29,4 +29,6 @@
 12.回滚到历史某个版本，命令：如：git reset --hard HEAD^    这是回到离当前版本的上一个版本
    1个^表示上一个版本，2个^表示上上个版本，如：git reset --hard HEAD^^   以此类推。
    当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100  如：git reset --hard HEAD~100
+   也可以直接回滚到具体某个commit id是，如：git reset --hard 3723342
+13.查看每一次执行过的命令：如：git reflog      通过这个也可以很容易看到每个版本的commit id号
 		

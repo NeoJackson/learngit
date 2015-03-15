@@ -14,5 +14,13 @@
 9.直接自动提交已经通过git add 追踪的文件，也就是修改过的文件且之前已经通过git add 操作的文件，
   (未通过 git add 添加过的文件是无效的) 可以一步到位，就不需要走缓存区了，直接提交到仓库中，
   使用命令：git commit -a -m "直接加个-a 这个参数就行了”
-10.删除文件，命令：rm readme.text     
+10.删除文件，命令：rm readme.text     在操作系统级别删除一个文件
    从git中删除文件，命令：git rm readme.txt   再提交操作，命令：git commit -m "delete readme.txt"
+   这个删除的文件只是当前版本的，它依然被记录在git仓库历史中，在历史版本中依然还是可以找到的！
+11.重命名文件：
+	一、命令：如：git mv readme.txt readme.text
+	二、提交命令：git commit -m "rename readme.txt"
+	相当于执行了以下三条命令：
+		1.mv readme.txt readme.text
+		2.git rm readme.text
+		3.git add readme.text

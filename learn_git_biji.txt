@@ -3,7 +3,8 @@
 	第一步：使用命令：git add <file>    如：git add readme.txt    注意：可反复多次使用，添加多个文件;
 	第二步：使用命令：git commit   如：git commit -m "这是提交描述信息"
 3.查看当前仓库状态：命令：git status   如：git status
-4.想要查看上一次怎么修改的readme.txt，可以用命令： git diff     如：git diff readme.txt
+4.想要查看上一次怎么修改的readme.txt，可以用命令： git diff     
+  如：git diff readme.txt 或者 git diff HEAD -- readme.txt    可以查看工作区和版本库里面最新版本的区别
 5.配置查看git信息：
 	一、配制用户名：git config --global user.name "NeoJackson"
 	二、配制email：git config --global user.name “neo_jackson@163.com"
@@ -30,5 +31,5 @@
    1个^表示上一个版本，2个^表示上上个版本，如：git reset --hard HEAD^^   以此类推。
    当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100  如：git reset --hard HEAD~100
    也可以直接回滚到具体某个commit id是，如：git reset --hard 3723342
-13.查看每一次执行过的命令：如：git reflog      通过这个也可以很容易看到每个版本的commit id号
+13.查看每一次执行过的命令：如：git reflog      通过这个也可以很容易看到每个版本的commit id号等，以便回到未来版本
 		

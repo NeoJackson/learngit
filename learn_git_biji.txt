@@ -3,7 +3,7 @@
 	第一步：使用命令：git add <file>    如：git add readme.txt    注意：可反复多次使用，添加多个文件;
 	第二步：使用命令：git commit   如：git commit -m "这是提交描述信息"
 3.查看当前仓库状态：命令：git status   如：git status
-4.想要查看上一次怎么修改的readme.txt，可以用命令： git diff     如：git diff
+4.想要查看上一次怎么修改的readme.txt，可以用命令： git diff     如：git diff readme.txt
 5.配置查看git信息：
 	一、配制用户名：git config --global user.name "NeoJackson"
 	二、配制email：git config --global user.name “neo_jackson@163.com"

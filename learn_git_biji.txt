@@ -31,5 +31,19 @@
    1个^表示上一个版本，2个^表示上上个版本，如：git reset --hard HEAD^^   以此类推。
    当然往上100个版本写100个^比较容易数不过来，所以写成HEAD~100  如：git reset --hard HEAD~100
    也可以直接回滚到具体某个commit id是，如：git reset --hard 3723342
+   git reset命令既可以回退版本，也可以把暂存区的修改回退到工作区。当我们用HEAD时，表示最新的版本。
+   命令，如：git reset HEAD readme.txt
 13.查看每一次执行过的命令：如：git reflog      通过这个也可以很容易看到每个版本的commit id号等，以便回到未来版本
-		
+14.让文件回到最近一次 git commit 或 git add 时的状态，命令，如：git checkout -- readme.txt
+	git checkout -- file命令中的--很重要，没有--，就变成了“创建一个新分支”的命令
+	
+场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file。
+
+场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令git reset HEAD file，就回到了场景1，第二步按场景1操作。
+
+
+
+远程仓库
+第1步：创建SSH Key   命令，如：ssh-keygen -t rsa -C "neo_jackson@163.com"
+
+
